@@ -3,36 +3,14 @@
 // const container = document.getElementById('root')
 // container.appendChild(element)
 // https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-256.png
+// https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise.png?alt=media&token=b9c4b236-16a9-4a56-bba2-90c9660a0f06
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Exercises from './pages/Exercises'
+import 'bootstrap/dist/css/bootstrap.css'
 
-const user = {
-    firstName: 'Raul',
-    lastName: 'Palacios',
-    avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-256.png'
-}
-
-function getName(user){
-    return `${user.firstName} ${user.lastName}`
-}
-
-function getGreeting(user){
-    if(user){
-        return <h1>Hello {getName(user)} </h1>
-    }
-    return <h1>Hello Stranger </h1>
-}
-
-const name = 'Raul'
-
-const element = (
-    <div>
-        <h1>{getGreeting(user)}</h1>
-        <img src={user.avatar} />
-    </div>
-)
 const container = document.getElementById('root')
 
 // ReactDOM.render(__QUE__, __DONDE__)
 
-ReactDOM.render(element, container)
+ReactDOM.render(<Exercises/> , container)
