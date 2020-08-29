@@ -4,9 +4,7 @@ import Welcome from '../components/Welcome'
 import AddButtom from '../components/AddButton'
 
 class Exercises extends React.Component {
-   constructor(props){
-      super(props)
-      this.state = {
+   state = {
           data: [{
             "id": 1,
             "title": "Technique Guides",
@@ -46,6 +44,6 @@ class Exercises extends React.Component {
        </div>
        )
    }
-}
+
 
 export default Exercises
